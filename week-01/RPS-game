@@ -1,0 +1,94 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mohan22iitk/Enjoy-Algorithms/blob/main/week-01/RPS-game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random"
+      ],
+      "metadata": {
+        "id": "Nt_UBIZO0Hhz"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cpu = random.choice([\"rock\",\"paper\",\"scissor\"])\n",
+        "player = input(\"rock,paper, or scissor:\")\n",
+        "\n",
+        "print(f\"CPU: {cpu} Vs Player: {player}\")\n",
+        "\n",
+        "if player == cpu:\n",
+        "    print(\"Tie\")\n",
+        "elif player == \"rock\":\n",
+        "    if cpu == \"scissor\" :\n",
+        "        print(f\"Player wins\")\n",
+        "    elif cpu == \"paper\":\n",
+        "        print(f\"cpu wins\")\n",
+        "elif player == \"paper\":\n",
+        "    if cpu == \"scissor\":\n",
+        "        print(f\"cpu wins\")\n",
+        "    elif cpu == \"rock\":\n",
+        "        print(f\"Player wins\")\n",
+        "elif player == \"scissor\":\n",
+        "    if cpu == \"paper\":\n",
+        "        print(f\"Player wins\")\n",
+        "    elif cpu == \"rock\":\n",
+        "        print(f\"rock wins\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pjZz7sxD0KZV",
+        "outputId": "bccf8ccc-aff4-44cf-d018-3cc3f1c81727"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "rock,paper, or scissor:rock\n",
+            "CPU: paper Vs Player: rock\n",
+            "cpu wins\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "qDumEhCY0PwO"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
